@@ -214,3 +214,22 @@ input{
     height: 2px;
     background-color: var(--text-color);
 }
+
+
+.tabs__data {
+   row-gap:  1rem; 
+}
+
+.tabs__descrition span:last-child {
+    display: block;
+}
+
+/*Active tab*/
+.tabs__btn.tab__active {
+    color: var(--first-color);
+}
+
+.tabs__btn.tab__active::after {
+    background-color: var(--first-color);
+    width: 100%;
+}
