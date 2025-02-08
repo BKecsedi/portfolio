@@ -66,7 +66,7 @@
    * {
     margin: 0;
     padding: 0;
-    box-sizing:
+    box-sizing:0;
    }
 
    input,
@@ -128,12 +128,21 @@ input{
     padding-block: 8rem;
 }
 
-.section_title {
+.section__title {
     font-size: var(--h1-font-size);
     margin-bottom: 1rem;
 }
 
-.section
+.section__title:not(.about .section__title),
+.section__description {
+    text-align: center;
+}
+.section__description {
+    max-width: 600px;
+    margin-inline: auto;
+}
+
+
 /*===========Home======================*/
 .home{
     padding-block: 16rem 9rem;
@@ -173,14 +182,17 @@ input{
     background-color: var(--container-color);  
 }
 
-.abot_container {
-    grid-template-columns: 5fr 7fr;
-    align-items: center;
-    column-gap: 4rem;
+.about__container {
+    display: grid;
+    grid-template-columns: 5fr 7fr; 
+     align-items: center; 
+     column-gap: 4rem; 
+    
 }
 
 .about_img{
     border-radius: var(--radius);
+    
 }
 
 .about__desciption {
@@ -213,6 +225,7 @@ input{
     width: 30%;
     height: 2px;
     background-color: var(--text-color);
+    transition: all 0.3s var(--transition);
 }
 
 
@@ -232,4 +245,12 @@ input{
 .tabs__btn.tab__active::after {
     background-color: var(--first-color);
     width: 100%;
+}
+
+.tabs__item[data-content] {
+    display: none;
+}
+
+.tab__active[data-content] {
+    display: block;
 }

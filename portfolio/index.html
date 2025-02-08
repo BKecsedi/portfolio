@@ -18,21 +18,23 @@
         <main class="main">
         
         <!--============HOME================-->
-        <section class="home" id="home">
-           <div class="home__container container grid">
+        <section class="home" id="home"></section>
+        <div class="home__container container grid">
             <div class="home__container">
-                <span class="home__subtitle">Welcom to my World</span>
-                <h1 class="home__title">Hi, I'm Balint Kecsedi <span>WEB Developer.</span> base in England.</h1>
+                <span class="home__subtitle">Welcome to my World</span>
+                <h1 class="home__title">Hi, I'm Balint Kecsedi <span>WEB Developer.</span> based in England.
+                </h1>
             </div>
             <img src="img/home.jpg.jpg" alt="" class="home__img"/>
            </div> 
         </section>
         <!--============ABOUT==============-->
+        
         <section class="about section" id="about">
             <div class="about__container container grid">
-              <img src="img/about.jpg"  alt="" class="about__img">
+              <img src="img/about.jpg"  alt="" class="about__img"/>
 
-            </div class="about__content">
+            <div class="about__content">
               <h2 class="section__title">About Me</h2>
 
               <p class="about__description">
@@ -47,86 +49,149 @@
                 <span class="tabs__btn" data-target="#experience">Experience</span>
                 <span class="tabs__btn" data-target="#Education">Education and Certification</span>
               </div>
-              <div class="tab__content">
-                <div class="tab__items tab__active" id="skills">
-                   <div class="tab__data grid">
-                    <p class="tabs__desciption">
-                        <span>Experiencedesign</span> - UI/UX
-                        <span>Delight the user</span>
-                    </p>
 
-                    <p class="tabs__desciption">
-                        <span>WEb user interface design.</span> - Development
-                        <span>Website, web experience... </span>
-                    </p>
-
-                    <p class="tabs__desciption">
-                        <span>Experiencedesign</span> - Animation
-                        <span>I like to move it...</span>
-                    </p>
-                   </div>
+              <div class="tabs__content">
+                <div class="tabs__item tab__active" data-content id="skills">
+                    <div class="tabs__data grid">
+                        <p class="tabs__desciption">
+                            <span>Experiencedesign</span> - UI/UX
+                            <span>Delight the user</span>
+                        </p>
+                        <p class="tabs__desciption">
+                            <span>Web user interface design.</span> - Development
+                            <span>Website, web experience... </span>
+                        </p>
+                        <p class="tabs__desciption">
+                            <span>Experiencedesign</span> - Animation
+                            <span>I like to move it...</span>
+                        </p>
+                    </div>
                 </div>
-                
-                <div class="tab__items " id="award">
-                    <div class="tab__data grid">
-                     <p class="tabs__desciption">
-                         <span>AWWards.com</span> - Winner
-                         <span>2019-2020</span>
-                     </p>
- 
-                     <p class="tabs__desciption">
-                         <span>Css Design Awards-</span> Winner
-                         <span>2017-2018 </span>
-                     </p>
- 
-                     <p class="tabs__desciption">
-                         <span>Design</span> - site of the day
-                         <span>2013-2014</span>
-                     </div>
+            
+                <div class="tabs__item" data-content id="award">
+                    <div class="tabs__data grid">
+                        <p class="tabs__desciption">
+                            <span>AWWards.com</span> - Winner
+                            <span>2019-2020</span>
+                        </p>
+                        <p class="tabs__desciption">
+                            <span>Css Design Awards</span> - Winner
+                            <span>2017-2018</span>
+                        </p>
+                        <p class="tabs__desciption">
+                            <span>Design</span> - Site of the Day
+                            <span>2013-2014</span>
+                        </p>
+                    </div>
                 </div>
-
-                <div class="tab__items tab" id="experience">
-                            <div class="tab__data grid">
-                             <p class="tabs__desciption">
-                                 <span>Front-end developer</span> - Google
-                                 <span>2018-...</span>
-                             </p>
-         
-                             <p class="tabs__desciption">
-                                 <span> Front-end Enginer</span> - Meta
-                                 <span>2016-2018 </span>
-                             </p>
-         
-                             <p class="tabs__desciption">
-                                 <span>Junior Front-end enginer</span> - Alibaba
-                                 <span>2015-2016</span>
-                             </p>
-                             </div>
-                </div>  
-                 
-                <div class="tab__items tab" id="Education">
-                    <div class="tab__data grid">
-                     <p class="tabs__desciption">
-                         <span>Az meg ez</span> -Itt is ott is
-                         <span>2009</span>
-                     </p>
- 
-                     <p class="tabs__desciption">
-                         <span>Diploma in computer </span> - Development
-                         <span>Website, web experience... </span>
-                     </p>
- 
-                     <p class="tabs__desciption">
-                         <span>Graphic design</span> - ABC school
-                         <span>2007.</span>
-                     </p>
-                     </div>
-                </div> 
+            
+                <div class="tabs__item" data-content id="experience">
+                    <div class="tabs__data grid">
+                        <p class="tabs__desciption">
+                            <span>Front-end Developer</span> - Google
+                            <span>2018-...</span>
+                        </p>
+                        <p class="tabs__desciption">
+                            <span>Front-end Engineer</span> - Meta
+                            <span>2016-2018</span>
+                        </p>
+                        <p class="tabs__desciption">
+                            <span>Junior Front-end Engineer</span> - Alibaba
+                            <span>2015-2016</span>
+                        </p>
+                    </div>
+                </div>
+            
+                <div class="tabs__item" data-content id="Education">
+                    <div class="tabs__data grid">
+                        <p class="tabs__desciption">
+                            <span>Az meg ez</span> - Itt is ott is
+                            <span>2009</span>
+                        </p>
+                        <p class="tabs__desciption">
+                            <span>Diploma in Computer</span> - Development
+                            <span>Website, web experience...</span>
+                        </p>
+                        <p class="tabs__desciption">
+                            <span>Graphic Design</span> - ABC School
+                            <span>2007</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            </div>
               </div>
             </div>
         </section>
         <!--===========SERVICE==============-->
+<section class="services section" id="serviction">
+    <h2 class="section__title">My Awesome Service</h2>
+    <p class="section__desciption">There are many variations of passages of Lorem Ipsum 
+        available, but the majority have suffered alteration.</p>
 
+        <div class="services__container">
+            <div class="services__item">
+                <i class="uil uil-rss-interface"></i>
+
+                <h3 class="service__title">Business Stratagy</h3>
+                <p class="service__desciption">
+                    I throw myself down among the tall grass by the stream as I lie 
+                    close to the earth.
+                </p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-layer-group"></i>
+
+                <h3 class="service__title">WEbsite Development</h3>
+                <p class="service__desciption">
+                    I throw myself down among the tall grass by the stream as I lie 
+                    close to the earth.
+                </p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-users-alt"></i>
+
+                <h3 class="service__title">Marketing and Reporting</h3>
+                <p class="service__desciption">
+                    I throw myself down among the tall grass by the stream as I lie 
+                    close to the earth.
+                </p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-desktop"></i>
+
+                <h3 class="service__title">Mobile Development</h3>
+                <p class="service__desciption">
+                    I throw myself down among the tall grass by the stream as I lie 
+                    close to the earth.
+                </p>
+            </div>
+
+            <div class="services__item">
+                <i class="uil uil-users-alt"></i>
+                
+                <h3 class="service__title">Marketing and Reporting</h3>
+                <p class="service__desciption">
+                    I throw myself down among the tall grass by the stream as I lie 
+                    close to the earth.
+                </p>
+            </div>
+            
+            <div class="services__item">
+                <i class="uil uil-desktop"></i>
+
+                <h3 class="service__title">Mobile Developmenty</h3>
+                <p class="service__desciption">
+                    I throw myself down among the tall grass by the stream as I lie 
+                    close to the earth.
+                </p>
+            </div>
+
+        </div>
+</section>
         <!--==========PORTFOLIO=============-->
 
         <!--===========CONTACT==============-->
