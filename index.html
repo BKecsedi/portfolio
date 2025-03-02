@@ -13,7 +13,26 @@
     </head>
     <body>
         <!--===========HEADER==============-->
+      <header class="header" id="header">
+        <nav class="nav container">
+            <a href="index.html" class="nav__logo">B<span>a</span>lint</a>
 
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link active">Home</a></li>
+
+                    <li><a href="#about" class="nav__link">About</a></li>
+
+                    <li><a href="#services" class="nav__link">Services</a></li>
+
+                    <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
+
+                    <li><a href="#contact" class="nav__link">Contact</a></li>
+
+                </ul>
+            </div>
+        </nav>
+      </header>
         <!--============MAIN===============-->
         <main class="main">
         
@@ -200,7 +219,7 @@
         suffered alteration.
     </p>
 
-    <div class="porfolio__container  container grid">
+    <div class="portfolio__container  container grid">
 
         <div class="portfolio__item">
           <img
@@ -257,13 +276,106 @@
     </div>
 </section>
         <!--===========CONTACT==============-->
+<section class="contactsection" id="contact">
+    <div class="contact__container container grid">
+        <div class="contact__content">
+            <h2 class="section_title">Hire Me</h2>
+
+            <p class="contact_description">
+                I am availablefor work. Connect with me via phone: 
+                <a href="tel:07466393772">07466393772</a> or email: 
+                <a href="mailto:balintkecsedi@gmail.com">balintkecsedi@gmail.com</a>.
+            </p>
+
+            <form class="contact__form" id="contact-form">
+
+                <div class="contact__formt-input">
+                    <input
+                      type="text"
+                      name="name"
+                      placeholder="Your Name*"
+                      class="contact__input"
+                      id="contact-name"
+                      />
+                </div>
+
+                <div class="contact__formt-input">
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="Your e-mail"
+                      class="contact__input"
+                      id="contact-email"
+                      />
+                </div>
+
+                <div class="contact__formt-input">
+                    <input
+                      type="text"
+                      name="subject"
+                      placeholder="Write a Subject"
+                      class="contact__input"
+                      id="contact-subject"
+                      />
+                </div>
+
+                <div class="contact__fomr-input">
+                   <textarea name="message" id="contact-message" 
+                   class="contact__input textarea" placeholder="Your Message">
+
+                   </textarea>
+                </div>
+               
+                <input type="submit" value="Submit" class="btn"/>
+
+                <p class="error__message" id="error-message"></p>
+            </form>
+        </div>
+
+        <img src="img/contact.jpg" alt="" class="contact__img">
+    </div>
+</section>
         </main>
         <!--============FOOTER==============-->
+<footer class="footer">
+    <div class="footer__container container grid">
+        <a href="index.html" class="footer__logo">B<span>a</span>lint</a>
 
+        <div class="footer__social">
+
+            <a href="www.facebook.com" 
+            target="_blank" 
+            class="footer__social-link">
+            <i class="uil uil-facebook-f"></i>
+            </a>
+            
+            <a href="www.twitter.com" 
+            target="_blank"
+            class="footer__social-link">
+            <i class="uil uil-twitter"></i>
+            </a>
+
+            <a href="www.linkedin.com" 
+            target="_blank" 
+            class="footer__social-link">
+            <i class="uil uil-linkedin"></i>
+            </a>
+            
+            <a href="www.instagram.com" 
+            target="_blank" class="footer__social-link">
+            <i class="uil uil-instagram"></i>
+            </a>
+
+        </div>
+        <p class="footer__copyright">&copy;2025. All rights reserved. </p>
+    </div>
+</footer>    
         <!--==========SCROLL UP=============-->
 
         <!--===========EMAIL JS ============-->
-
+        <script type="text/javascript"
+         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+        </script>
         <!--============MAIN JS=============-->
         <script src="js/main.js"></script>
     </body>
