@@ -69,6 +69,9 @@
     box-sizing:0;
    }
 
+   html {
+    scroll-behavior: smooth;
+   }
    input,
    textarea,
    body{
@@ -249,6 +252,27 @@ input{
 .nav__link:hover {
     color: var(--first-color);
 }
+
+.scroll-header {
+    position: fixed;
+    background-color: var(--container-color);
+    box-shadow: 0 0 10pxc var(--border-color);
+    animation: slide-down 1s;
+}
+
+@keyframes slide-down {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.scroll-header .nav{
+    height: var(--header-height);
+}
+
 /*===========Home======================*/
 .home{
     padding-block: 16rem 9rem;
@@ -558,4 +582,29 @@ input{
 
     background-color: var(--first-color);
     border-color: var(--first-color);
+ }
+
+ .scrollup {
+    position: fixed;
+    right: 1rem;
+    bottom: 3rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--title-color);
+    display: grid;
+    place-items: center;
+    z-index: var(--z-fixed);
+    transition:all  0.4s var(--transition);
+
+ }
+
+ .scrollup__icon {
+    color: var(--first-color);
+    font-size: 2.25rem;
+    line-height: 1;
+ }
+
+ .show-scroll {
+    bottom: 3rem;
  }
